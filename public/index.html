@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <style>
+        body{
+    background-image: url('https://wallpapercave.com/wp/wp9117983.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="box">
+                <form action="chat.html">
+                    <h1><i class="fas fa-heart"></i>WeChat</h1>
+                    <!-- <label for="username">Enter your Username</label>  -->
+                        <!-- <input type="text" name="username" id="username" placeholder="enter here" required> -->
+                    <button id="createroom" class="createroom-butt" style="z-index: 2;" type="submit">Create New Room</button>
+                    <div class="or">OR</div>
+                    <input type="text" name="room" spellcheck="false" placeholder="Enter Room Code" id="roomcode"
+                        class="roomcode" ><br>
+                    <div class="joinroom room" id="joinroom" type="submit">Join Existing Room</div>
+
+                    <!-- <label for="username">Enter your Username</label> 
+                        <input type="text" name="username" id="username" placeholder="enter here" required>
+                    <label for="room">Join Existing Room</label>
+                        <input type="text" name="room" id="room"placeholder="enter here" required>
+                <button type="submit" class="btn1">Join-Room</button>                    -->
+                </form>
+            </div>
+        </main>
+    </div>
+    <script defer src="./js/createRoom.js"></script>
+</body>
+</html>
+

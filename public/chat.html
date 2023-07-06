@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <div class="overlaybox">
+            <div class="head-name">Enter Your Name</div>
+            <input type="text" class="name-field" placeholder="Type here.." id="name-field"></input><br>
+            <button class="continue-name btn1">Join</button>
+        </div>
+    </div>
+    <div class="blur"></div>
+    <header class="head">
+        <div><i class="fas fa-heart"></i> WeChat</div>
+        <div></i><a href="index.html" class="btn2">Leave Room</a></div>
+    </header>
+    <main class="chat-container">
+        <div class="sidebar">
+            <div class="name"><i class="fas fa-comments"></i> Room Code</div>
+            <div id="room-name"></div>
+            <button class="copy-text" id="btn" onclick="copyText()">Copy Code</button>
+            <div class="userlist"><i class="fas fa-users"></i> Users</div>
+            <ul id="users"></ul>
+        </div>
+        <div class="container">
+            <div class="chat-messages"></div>
+            <div class="typechat">
+                <form id="chat-form">
+                  <input type="text" name="chat" id="chat">
+                  <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+                </form>
+            </div>          
+        </div>
+    </main>
+        
+        <script src="
+https://cdn.jsdelivr.net/npm/qs@6.11.2/dist/qs.min.js
+"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script defer src="js/main.js"></script>
+</body>
+</html>

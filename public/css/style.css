@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: #1c1c1c;
+}
+
+.head{
+    display: flex;
+	font-size: 20px;
+    justify-content: space-between;
+	box-sizing: border-box;
+    padding: 4px;
+	height: 6vh;
+    background-color: #28292d;
+	color: white;
+}
+.chat-container{
+    display: flex;
+}
+.sidebar{
+    background-color:#28292d;
+	border: 1px solid white;
+    width: 18vw;
+	height:94vh;
+	box-sizing: border-box;
+    padding: 20px;
+	margin-left: 0;
+    overflow-y: scroll;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+}
+.chat-messages{
+	background:url('https://c4.wallpaperflare.com/wallpaper/218/805/282/love-mood-heart-cry-wallpaper-preview.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+    width: 82vw;
+    padding: 20px;
+	height: 85vh;
+    overflow-y: scroll;
+}
+.message{
+    background-color: #f49fd2;
+	border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+#chat{
+	border-radius: 10px;
+	width: 70vw;
+	box-sizing: border-box;
+	padding: 8px;
+}
+.typechat{
+	box-sizing: border-box;
+	margin: 0 10px;
+}
+.btn{
+	margin: 20px;
+    padding: 10px;
+    border-radius: 20px 5px;
+    background-color: #d9138a;
+	cursor: pointer;
+    color: white;
+}
+.btn:hover,.btn2:hover{
+    background-color:#c9f7ff;
+	color: black;
+	font-weight: 600;
+}
+.btn2{
+	cursor: pointer;
+	padding: 8px;
+	margin: 2px;
+	font-size: 15px;
+	text-decoration: none;
+    border-radius: 20px 5px;
+    background-color: #d9138a;
+    cursor: pointer;
+    color: white;
+}
+.sidebar span{
+	font-size: 20px;
+	text-align: center;
+	padding: 5px;
+}
+#room-name{
+	color: rgb(238, 182, 238);
+	font-size: 20px;
+	text-align: center;
+}
+.userlist{
+	font-size: 20px;
+	color: aliceblue;
+	text-align: center;
+	padding: 5px;
+	font-weight: 500;
+}
+.name{
+	font-size: 20px;
+	color: aliceblue;
+	text-align: center;
+	padding: 5px;
+	font-weight: 500;
+}
+#users{
+	list-style-type: none;
+	text-align: center;
+	color: rgb(238, 182, 238);
+	font-size: 17px;
+}
+.green{
+	color: green;
+}
+.red{
+	color: red;
+}
+.yellow{
+	color: yellow;
+}
+.meta{
+ color: rgb(43, 0, 255);
+}
+.overlay{
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+.overlaybox{
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: center;
+	top: 25%;
+	width: 300px;
+	height:150px;
+    border-radius: 25px 25px;
+    background: #28292d;
+    z-index: 10;
+    padding: 30px 30px;
+}
+
+.copy-text{
+	margin-left: 5vw;
+	text-align: center;
+    padding: 5px;
+    background-color: #28292d;
+	border-top: 1px solid rgb(238, 182, 238);
+	border-bottom: 1px solid rgb(238, 182, 238);
+    cursor: pointer;
+    color: rgb(238, 182, 238);
+}
+.blur{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 5;
+	background-color: black;
+}
+.head-name{
+    color: #45f3ff;
+}
+.btn1{
+    margin: 12px 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: #45f3ff;
+    background-color: #1c1c1c;
+    letter-spacing: 3px;
+    border: none;
+    border-top: 1px solid #45f3ff;
+    border-bottom: 1px solid #45f3ff;
+}
+.btn1:hover{
+    font: 16px;
+    /* border: 4px solid #45f3ff; */
+    letter-spacing: 4px;
+}
+.name-field{
+    margin: 10px 5px;
+    margin-top: 15px;
+    padding: 10px;
+    background: #28292d;
+    color: white;
+}
