@@ -24,10 +24,10 @@ io.on('connection',(socket)=>{
         socket.join(user.room);
         console.log('new connection');
 
-        socket.emit('message',formatMessage('Bot','Welcome to WeChat'),'yellow'); // just emits to single user
+        socket.emit('message',formatMessage('Bot','Welcome to WeChat'),'black'); // just emits to single user
         
         // broadcast when a user connects
-        socket.broadcast.to(user.room).emit('message',formatMessage('Bot',`${user.username} has joined the chat`),'yellow');
+        socket.broadcast.to(user.room).emit('message',formatMessage('Bot',`${user.username} has joined the chat`),'black');
 
         // send users and room info
         io.to(user.room).emit('roomUsers',{
@@ -53,7 +53,7 @@ io.on('connection',(socket)=>{
         const user=userLeave(socket.id);
         if(user)
         {
-            io.to(user.room).emit('message',formatMessage('Bot',`${user.username} has left the chat`),'yellow');
+            io.to(user.room).emit('message',formatMessage('Bot',`${user.username} has left the chat`),'black');
 
             // send users and room info
             io.to(user.room).emit('roomUsers',{

@@ -22,14 +22,16 @@
     </header>
     <main class="chat-container">
         <div class="sidebar">
+            <div id="google_translate_element"></div>
             <div class="name"><i class="fas fa-comments"></i> Room Code</div>
             <div id="room-name"></div>
-            <button class="copy-text" id="btn" onclick="copyText()">Copy Code</button>
+            <button class="copy-text" id="btn3" onclick="copyText()">Copy Code</button>
             <div class="userlist"><i class="fas fa-users"></i> Users</div>
             <ul id="users"></ul>
         </div>
         <div class="container">
-            <div class="chat-messages"></div>
+            <div class="chat-messages">
+            </div>
             <div class="typechat">
                 <form id="chat-form">
                   <input type="text" name="chat" id="chat">
@@ -39,10 +41,11 @@
         </div>
     </main>
         
-        <script src="
+        <script defer src="
 https://cdn.jsdelivr.net/npm/qs@6.11.2/dist/qs.min.js
 "></script>
-        <script src="/socket.io/socket.io.js"></script>
-        <script defer src="js/main.js"></script>
+<script defer src="/socket.io/socket.io.js"></script>
+<script defer type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer src="js/main.js"></script>
 </body>
 </html>

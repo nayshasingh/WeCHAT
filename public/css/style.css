@@ -23,6 +23,9 @@ body
     display: flex;
 }
 .sidebar{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
     background-color:#28292d;
 	border: 1px solid white;
     width: 18vw;
@@ -35,6 +38,8 @@ body
 .container{
 	display: flex;
 	flex-direction: column;
+	height:94vh;
+	width: 82vw;
 }
 .chat-messages{
 	background:url('https://c4.wallpaperflare.com/wallpaper/218/805/282/love-mood-heart-cry-wallpaper-preview.jpg');
@@ -47,6 +52,9 @@ body
     overflow-y: scroll;
 }
 .message{
+	display: block; /* Ensures the divs are sized according to their content */
+  	width: fit-content; 
+	font-size: 16px;
     background-color: #f49fd2;
 	border-radius: 10px;
     padding: 10px;
@@ -63,8 +71,10 @@ body
 	margin: 0 10px;
 }
 .btn{
-	margin: 20px;
-    padding: 10px;
+	box-sizing: border-box;
+	width: 6vw;
+	margin: 5px;
+    padding: 9px;
     border-radius: 20px 5px;
     background-color: #d9138a;
 	cursor: pointer;
@@ -82,7 +92,7 @@ body
 	font-size: 15px;
 	text-decoration: none;
     border-radius: 20px 5px;
-    background-color: #d9138a;
+    background-color: #c91651;
     cursor: pointer;
     color: white;
 }
@@ -117,13 +127,16 @@ body
 	font-size: 17px;
 }
 .green{
-	color: green;
+	color:darkgreen;
 }
 .red{
 	color: red;
 }
-.yellow{
-	color: yellow;
+.black{
+	color: #1c1c1c;
+}
+.brown{
+	color:darkviolet
 }
 .meta{
  color: rgb(43, 0, 255);
@@ -147,9 +160,7 @@ body
     z-index: 10;
     padding: 30px 30px;
 }
-
 .copy-text{
-	margin-left: 5vw;
 	text-align: center;
     padding: 5px;
     background-color: #28292d;
@@ -190,4 +201,24 @@ body
     padding: 10px;
     background: #28292d;
     color: white;
+}
+#google_translate_element{
+	text-align: center;
+	border-bottom:1px solid rgb(238, 182, 238);
+}
+.goog-te-combo, .VIpgJd-ZVi9od-ORHb *, .VIpgJd-ZVi9od-SmfZ *, .VIpgJd-ZVi9od-xl07Ob *, .VIpgJd-ZVi9od-vH1Gmf *, .VIpgJd-ZVi9od-l9xktf * {
+    border-radius: 5px;
+    padding: 1px;
+    color: white;
+    background: black;
+    font-family: arial;
+    font-size: 10pt;
+}
+.goog-te-combo, .VIpgJd-ZVi9od-ORHb *, .VIpgJd-ZVi9od-SmfZ *, .VIpgJd-ZVi9od-xl07Ob *, .VIpgJd-ZVi9od-vH1Gmf *, .VIpgJd-ZVi9od-l9xktf * {
+    font-family: arial;
+	height: 2vw;
+}
+.chat-form{
+	display: flex;
+	flex-direction: row;
 }

@@ -11,8 +11,6 @@ let username;
 // get username and room from URL
 const {room}=Qs.parse(location.search,{ignoreQueryPrefix:true});
 
-console.log(username,room);
-
 continueButt.addEventListener('click', () => {
     if (nameField.value == '') return;
     username = nameField.value;
@@ -24,9 +22,15 @@ continueButt.addEventListener('click', () => {
 // JOIN Chatroom
 // socket.emit('joinRoom',{username,room});
 
+// Function called when the Google Translate API library is loaded
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+  }
+
 // message from server
 socket.on('message',(message,color)=>{
     console.log(message);
+
     outputMessage(message,color);
     // scroll down
     chatMessages.scrollTop=chatMessages.scrollHeight;
@@ -75,10 +79,10 @@ function outputUsers(users)
 }
 function copyText(){
     setTimeout(() => {
-        btnText.innerText = "Copy text";
+        btnText.innerText = "Copy Code";
     }, 3000);
     const text = document.getElementById('room-name').innerText
-    const btnText = document.getElementById('btn')
+    const btnText = document.getElementById('btn3')
     navigator.clipboard.writeText(text);
     btnText.innerText = "Copied"
   }

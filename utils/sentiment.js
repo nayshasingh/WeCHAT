@@ -20,7 +20,7 @@ function message_sentiment(score)
     else if(score<0)
         return 'red';
     else
-        return 'yellow';
+        return 'brown';
 }
 module.exports={
   message_sentiment
