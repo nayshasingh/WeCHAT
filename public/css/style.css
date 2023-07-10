@@ -53,26 +53,33 @@ body
 }
 .message{
 	display: block; /* Ensures the divs are sized according to their content */
-  	width: fit-content; 
+	width: fit-content; 
 	font-size: 16px;
     background-color: #f49fd2;
 	border-radius: 10px;
     padding: 10px;
     margin: 10px;
 }
+#chat-form{
+	display: flex;
+	flex-direction: row;
+	height: 7vh;
+}
 #chat{
 	border-radius: 10px;
-	width: 70vw;
-	box-sizing: border-box;
-	padding: 8px;
+	/* width: 70vw; */
+	flex: 9;
+	/* box-sizing: border-box; */
+	padding: 3px;
 }
 .typechat{
-	box-sizing: border-box;
-	margin: 0 10px;
+	/* box-sizing: border-box; */
+	margin: 10px 10px;
 }
 .btn{
-	box-sizing: border-box;
-	width: 6vw;
+	/* box-sizing: border-box; */
+	/* width: 6vw; */
+	flex: 1;
 	margin: 5px;
     padding: 9px;
     border-radius: 20px 5px;
@@ -81,7 +88,7 @@ body
     color: white;
 }
 .btn:hover,.btn2:hover{
-    background-color:#c9f7ff;
+    background-color:#45f3ff;
 	color: black;
 	font-weight: 600;
 }
@@ -217,8 +224,4 @@ body
 .goog-te-combo, .VIpgJd-ZVi9od-ORHb *, .VIpgJd-ZVi9od-SmfZ *, .VIpgJd-ZVi9od-xl07Ob *, .VIpgJd-ZVi9od-vH1Gmf *, .VIpgJd-ZVi9od-l9xktf * {
     font-family: arial;
 	height: 2vw;
-}
-.chat-form{
-	display: flex;
-	flex-direction: row;
 }
